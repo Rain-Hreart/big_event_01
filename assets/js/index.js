@@ -33,7 +33,7 @@ function getUserInof() {
     // },
     dataType: 'json',
     success: (res) => {
-      console.log(res);
+      // console.log(res);
       if (res.status !== 0) {
         return layui.layer.msg(res.message, { icon: 5 });
       }
@@ -56,8 +56,8 @@ function getUserInof() {
 
 // 头像和文字渲染封装
 function renderAvatar(user) {
-  console.log(user);
-  console.log(user.nickname);
+  // console.log(user);
+  // console.log(user.nickname);
   // 1.渲染用户名,如果有昵称以昵称为准
   let name = user.nickname || user.username;
   $('#welcome').html('欢迎&nbsp;&nbsp;' + name);
